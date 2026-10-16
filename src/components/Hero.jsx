@@ -7,7 +7,6 @@ import {
   Github, 
   Linkedin, 
   Instagram, 
-  Code, 
   Mail, 
   CheckCircle2, 
   Terminal as TerminalIcon,
@@ -143,15 +142,6 @@ export const Hero = ({ onOpenResumeModal }) => {
                 title="LinkedIn Profile"
               >
                 <Linkedin className="w-4 h-4" />
-              </a>
-              <a
-                href={personalInfo.codepen}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-lg glass-panel hover:text-brand-cyan hover:border-brand-cyan/40 transition-all"
-                title="CodePen Profile"
-              >
-                <Code className="w-4 h-4" />
               </a>
               <a
                 href={personalInfo.instagram}

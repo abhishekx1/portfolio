@@ -14,8 +14,7 @@ import {
   Code2, 
   Sparkles,
   CheckCircle2,
-  Phone,
-  Globe
+  Phone
 } from 'lucide-react';
 import { personalInfo, experience, education, technicalSkills, projects } from '../data/portfolioData';
 
@@ -110,12 +109,6 @@ export const ResumeModal = ({ isOpen, onClose }) => {
                   <div className="flex items-center sm:justify-end gap-1.5">
                     <Mail className="w-3.5 h-3.5 text-brand-cyan" />
                     <span>{personalInfo.email}</span>
-                  </div>
-                  <div className="flex items-center sm:justify-end gap-1.5">
-                    <Globe className="w-3.5 h-3.5 text-brand-purple" />
-                    <a href={personalInfo.website} target="_blank" rel="noopener noreferrer" className="hover:text-brand-cyan transition-colors">
-                      {personalInfo.websiteDisplay}
-                    </a>
                   </div>
                   <div className="flex items-center sm:justify-end gap-1.5">
                     <MapPin className="w-3.5 h-3.5 text-brand-purple" />

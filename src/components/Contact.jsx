@@ -10,10 +10,8 @@ import {
   Github, 
   Linkedin, 
   Instagram, 
-  Code, 
   Sparkles,
-  Phone,
-  Globe
+  Phone
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { personalInfo } from '../data/portfolioData';
@@ -117,13 +115,6 @@ export const Contact = () => {
                 <Phone className="w-4 h-4 text-brand-teal shrink-0" />
                 <span>{personalInfo.phone}</span>
               </div>
-
-              <div className="flex items-center gap-2 bg-dark-950/70 p-3 rounded-2xl border border-white/5 text-xs sm:text-sm font-mono text-slate-200">
-                <Globe className="w-4 h-4 text-brand-purple shrink-0" />
-                <a href={personalInfo.website} target="_blank" rel="noopener noreferrer" className="text-brand-cyan hover:underline">
-                  {personalInfo.websiteDisplay}
-                </a>
-              </div>
             </div>
 
             {/* Location & Status Card */}
@@ -145,7 +136,7 @@ export const Contact = () => {
               <span className="text-xs font-mono text-slate-400 uppercase tracking-wider block">
                 Social Profiles & Repositories
               </span>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <a
                   href={personalInfo.github}
                   target="_blank"
@@ -163,15 +154,6 @@ export const Contact = () => {
                 >
                   <Linkedin className="w-4 h-4 text-brand-cyan" />
                   <span>LinkedIn</span>
-                </a>
-                <a
-                  href={personalInfo.codepen}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 p-3 rounded-2xl glass-panel hover:border-brand-cyan/40 hover:text-brand-cyan transition-all text-xs font-semibold text-slate-200"
-                >
-                  <Code className="w-4 h-4 text-brand-purple" />
-                  <span>CodePen</span>
                 </a>
                 <a
                   href={personalInfo.instagram}

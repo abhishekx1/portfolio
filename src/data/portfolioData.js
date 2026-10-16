@@ -4,8 +4,6 @@ export const personalInfo = {
   experienceYears: "3+ Years",
   phone: "+91 9616882034",
   email: "abhisheksrivastavx@gmail.com",
-  website: "https://abhisheksrivastav.in",
-  websiteDisplay: "abhisheksrivastav.in",
   titles: [
     "Frontend Developer",
     "React & TypeScript Engineer",
@@ -17,7 +15,6 @@ export const personalInfo = {
   status: "Open for High-Impact Frontend Roles",
   github: "https://github.com/abhishekx1",
   linkedin: "https://www.linkedin.com/in/abhisheksrivastavx/",
-  codepen: "https://codepen.io/Abhishekx",
   instagram: "https://www.instagram.com/_abhisheksrivastav/",
   resumePdfUrl: "/assets/docs/Abhishek_Srivastav_Frontend_Developer_Resume.pdf"
 };
